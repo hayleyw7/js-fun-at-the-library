@@ -51,12 +51,38 @@ describe("book.js", function () {
     });
   });
 
+
+
+
+
+
+
+
+
+
+
+
   describe("saveReview", function() {
-    it.skip("should be a function (comment the function back into the module.exports object in book.js)", function () {
+    it("should be a function (comment the function back into the module.exports object in book.js)", function () {
       assert.isFunction(saveReview);
     });
 
-    it.skip("should be able to add reviews to an array", function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    it("should be able to add reviews to an array", function() {
       var reviews = [];
 
       saveReview("An astounding success", reviews);
@@ -64,6 +90,25 @@ describe("book.js", function () {
       assert.equal(reviews.length, 1);
       assert.deepEqual(reviews, ["An astounding success"]);
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     it.skip("should be able to add reviews to an array that already contains reviews", function() {
       var reviews = ["You won't be able to put it down"];

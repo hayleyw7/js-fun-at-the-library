@@ -16,10 +16,63 @@ function buildMainCharacter(name, age, pronouns) {
   return character
 }
 
+///////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function saveReview(a) {
+  var reviews = [];
+	reviews.push(a);
+}
+
+saveReview("An astounding success")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 module.exports = {
   createTitle,
   buildMainCharacter,
-  // saveReview,
+  saveReview,
   // calculatePageCount,
   // writeBook,
   // editBook
