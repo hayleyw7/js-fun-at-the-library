@@ -16,42 +16,29 @@ function buildMainCharacter(name, age, pronouns) {
   return character
 }
 
-///////////////////////
+//WORKS BUT ADDING NEXT ONE NOW & IT'S HARD
 
+// function saveReview(content, reviews) {
+//   reviews.push(content);
+// }
 
+// {
+//     x.splice(found,1);
+// }
+// else{
+//     x.push(new Item(clickId, obj)); //push json object
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function saveReview(a) {
-  var reviews = [];
-	reviews.push(a);
+function saveReview(content, reviews) {
+  if
+    (reviews.includes(value) === false) {
+      reviews.push();
+  } else {
+		return reviews
+  }
 }
 
-saveReview("An astounding success")
-
-
-
-
-
-
-
-
-
-
+// npm test test/book-test.js
 
 
 
