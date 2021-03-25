@@ -40,22 +40,23 @@ function buildMainCharacter(name, age, pronouns) {
 
 function saveReview(content, reviews) {
   let result = [];
-  for (let index = 0; index < SOURCE.length; index++) {
-    let el = SOURCE[index];
-    if (result.indexOf(el) === -1) result.push(el);
+  for (let i = 0; i < 10; i++) {
+    let el = reviews[index];
+    if (result.indexOf(el) === -1) reviews.push(content);
+    }
   }
 
   //merge these two together somehow i think???
 
-  for (var i = 0; i < 10; i++) {
-    if
-      (reviews === false) {
-        reviews.push(content);
-      } else {
-    		return reviews
-      }
-  }
-}
+//   for (var i = 0; i < 10; i++) {
+//     if
+//       (reviews === false) {
+//         reviews.push(content);
+//       } else {
+//     		return reviews
+//       }
+//   }
+// }
 
 
 
