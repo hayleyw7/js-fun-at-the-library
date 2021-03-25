@@ -22,24 +22,47 @@ function buildMainCharacter(name, age, pronouns) {
 //   reviews.push(content);
 // }
 
-// {
-//     x.splice(found,1);
-// }
-// else{
-//     x.push(new Item(clickId, obj)); //push json object
+/////////
+
+//doesn't WORK
+
+// function saveReview(content, reviews) {
+//   // reviews.push(content);
+//   for (var i = 0; i < 10; i++) {
+//     if
+//       (reviews === false) {
+//         reviews.push(content);
+//       } else {
+//     		return reviews
+//       }
+//   }
 // }
 
 function saveReview(content, reviews) {
-  if
-    (reviews.includes(value) === false) {
-      reviews.push();
-  } else {
-		return reviews
+  let result = [];
+  for (let index = 0; index < SOURCE.length; index++) {
+    let el = SOURCE[index];
+    if (result.indexOf(el) === -1) result.push(el);
+  }
+
+  //merge these two together somehow i think???
+
+  for (var i = 0; i < 10; i++) {
+    if
+      (reviews === false) {
+        reviews.push(content);
+      } else {
+    		return reviews
+      }
   }
 }
 
-// npm test test/book-test.js
 
+
+///if new incoming review matches
+//existing one in array, return and not do anything
+
+// npm test test/book-test.js
 
 
 
