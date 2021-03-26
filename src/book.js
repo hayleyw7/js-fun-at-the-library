@@ -38,13 +38,36 @@ function buildMainCharacter(name, age, pronouns) {
 //   }
 // }
 
-function saveReview(content, reviews) {
-  let result = [];
-  for (let i = 0; i < 10; i++) {
-    let el = reviews[index];
-    if (result.indexOf(el) === -1) reviews.push(content);
-    }
+
+
+function saveReview(newReview, reviews) {
+  if (!reviews.includes(newReview)) {
+    reviews.push(newReview);
   }
+}
+
+
+
+
+
+
+//
+// function saveReview(content,reviews) {
+//
+// }
+
+
+
+
+/////////////// not going to use
+//
+// function saveReview(content, reviews) {
+//   // let result = [];
+//   for (let i = 0; i < reviews.length; i++) {
+//     // let content = reviews[i];
+//     if (reviews.indexOf(content) === -1) reviews.push(content);
+//     }
+//   }
 
   //merge these two together somehow i think???
 
