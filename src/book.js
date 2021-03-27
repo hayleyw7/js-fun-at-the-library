@@ -16,33 +16,9 @@ function buildMainCharacter(name, age, pronouns) {
   return character
 }
 
-//WORKS BUT ADDING NEXT ONE NOW & IT'S HARD
-
-// function saveReview(content, reviews) {
-//   reviews.push(content);
-// }
-
-/////////
-
-//doesn't WORK
-
-// function saveReview(content, reviews) {
-//   // reviews.push(content);
-//   for (var i = 0; i < 10; i++) {
-//     if
-//       (reviews === false) {
-//         reviews.push(content);
-//       } else {
-//     		return reviews
-//       }
-//   }
-// }
-
-
-
 function saveReview(newReview, reviews) {
   if (!reviews.includes(newReview)) {
-    reviews.push(newReview);
+    reviews.push(newReview)
   }
 }
 
@@ -51,42 +27,48 @@ function saveReview(newReview, reviews) {
 
 
 
-//
-// function saveReview(content,reviews) {
-//
-// }
 
 
 
 
-/////////////// not going to use
-//
-// function saveReview(content, reviews) {
-//   // let result = [];
-//   for (let i = 0; i < reviews.length; i++) {
-//     // let content = reviews[i];
-//     if (reviews.indexOf(content) === -1) reviews.push(content);
-//     }
-//   }
-
-  //merge these two together somehow i think???
-
-//   for (var i = 0; i < 10; i++) {
-//     if
-//       (reviews === false) {
-//         reviews.push(content);
-//       } else {
-//     		return reviews
-//       }
-//   }
-// }
 
 
 
-///if new incoming review matches
-//existing one in array, return and not do anything
 
 // npm test test/book-test.js
+
+function calculatePageCount(pages) {
+  var pages = pages;
+  pages.push(pages.length + 20)
+	var fullTitle =
+		// function test() {
+		// 	createTitle.createTitle().length
+		// }
+	console.log(fullTitle)
+}
+
+//not working
+
+// function calculatePageCount(bookPageCount, increasedPages) {
+//   var bookPageCount = bookPageCount;
+//   var pages = pages;
+//   pages.push(pages.length + 20);
+//   var fullTitle = pages;
+//     // function test() {
+//     // 	createTitle.createTitle().length
+//     // }
+//   console.log(fullTitle)
+
+///not working
+
+// function calculatePageCount(pages) {
+//   var pages = pages;
+//   pages.push(pages + createTitle.bookIdea.length)
+// 	return pages
+// }
+
+///
+
 
 
 
@@ -107,7 +89,7 @@ module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
