@@ -35,7 +35,7 @@ function saveReview(newReview, reviews) {
 
 
 
-// npm test test/book-test.js
+
 
 function calculatePageCount(pages) {
   var pages = pages;
@@ -67,7 +67,41 @@ function calculatePageCount(pages) {
 // 	return pages
 // }
 
-///
+
+
+
+
+
+
+
+/////////////////
+
+////WRITEBOOK!!!!!!!
+
+/////////////////
+
+// function writeBook(book) {
+//   var book = {
+//     bookTitle: bookTitle,
+//     bookCharacter: bookCharacter,
+//     writeBook: writeBook;
+//   }
+// }
+
+var writeBook = writeBook
+
+
+
+
+/////////
+
+//////EDIT BOOK!!!!!!!
+
+////////////
+
+function editBook(oldPages, newPages) {
+  var pageCount = pages / 3
+}
 
 
 
@@ -82,14 +116,13 @@ function calculatePageCount(pages) {
 
 
 
-
-
+// npm test test/book-test.js
 
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
   calculatePageCount,
-  // writeBook,
-  // editBook
+  writeBook,
+  editBook
 }
