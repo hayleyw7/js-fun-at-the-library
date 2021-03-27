@@ -1,6 +1,6 @@
-function createTitle(title) {
+function createTitle(bookTitle) {
   var bookIdea = "Storm's Awakening";
-  return `The ${title}`;
+  return `The ${bookTitle}`;
 };
 
 var sushiTitle = "Dancing Sushi";
@@ -22,53 +22,10 @@ function saveReview(newReview, reviews) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function calculatePageCount(pages) {
-  var pages = pages;
-  pages.push(pages.length + 20)
-	var fullTitle =
-		// function test() {
-		// 	createTitle.createTitle().length
-		// }
-	console.log(fullTitle)
+function calculatePageCount(bookTitle) {
+  var newPageCount = bookTitle.length * 20;
+  return newPageCount;
 }
-
-//not working
-
-// function calculatePageCount(bookPageCount, increasedPages) {
-//   var bookPageCount = bookPageCount;
-//   var pages = pages;
-//   pages.push(pages.length + 20);
-//   var fullTitle = pages;
-//     // function test() {
-//     // 	createTitle.createTitle().length
-//     // }
-//   console.log(fullTitle)
-
-///not working
-
-// function calculatePageCount(pages) {
-//   var pages = pages;
-//   pages.push(pages + createTitle.bookIdea.length)
-// 	return pages
-// }
-
-
-
 
 
 
@@ -80,15 +37,32 @@ function calculatePageCount(pages) {
 
 /////////////////
 
-// function writeBook(book) {
-//   var book = {
-//     bookTitle: bookTitle,
-//     bookCharacter: bookCharacter,
-//     writeBook: writeBook;
-//   }
-// }
+function writeBook(bookTitle,) {
+  var book = {
+    title: bookTitle,
+    mainCharacter: bookCharacter,
+    pageCount: pageCount,
+    genre: genre,
+  }
+  return book
+}
 
-var writeBook = writeBook
+
+
+
+
+// npm test test/book-test.js
+
+
+
+
+
+
+
+
+
+
+
 
 
 
