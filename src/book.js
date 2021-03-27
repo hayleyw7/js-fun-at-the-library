@@ -47,16 +47,6 @@ function writeBook(bookTitle, bookCharacter, genre) {
 
 
 
-// npm test test/book-test.js
-
-
-
-
-
-
-
-
-
 
 
 
@@ -69,11 +59,20 @@ function writeBook(bookTitle, bookCharacter, genre) {
 
 ////////////
 
-function editBook(oldPages, newPages) {
-  var pageCount = pages / 3
+function editBook(book) {
+  book.pageCount = book.pageCount * .75
 }
 
 
+
+
+
+
+
+
+
+
+// npm test test/book-test.js
 
 
 

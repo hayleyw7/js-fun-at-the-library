@@ -145,10 +145,40 @@ describe("writeBook", function() {
   //////////////
   /////////////////
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe("editBook", function() {
     it("should be a function", function () {
       assert.isFunction(editBook);
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     it("should decrease the book's page count to be three quarters of what it originally was", function () {
       var ghoulTitle = createTitle("Teenage Ghoul");
@@ -163,16 +193,28 @@ describe("writeBook", function() {
     });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     it("should decrease a different book's page count to be three quarters of what it originally was", function () {
       var dragonTitle = createTitle("Dragon in the Summer");
       var dragonCharacter = buildMainCharacter("Dana", 25, "they/them");
       var dragonBook = writeBook(dragonTitle, dragonCharacter, "fantasy");
 
-      assert.equal(dragonBook.pageCount, 560);
+      assert.equal(dragonBook.pageCount, 480);
 
       editBook(dragonBook);
 
-      assert.equal(dragonBook.pageCount, 420);
+      assert.equal(dragonBook.pageCount, 360);
     });
   });
 });
