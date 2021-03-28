@@ -105,10 +105,24 @@ describe("shelf.js", function() {
 
 ///////
 
-  describe("unshelfBook", function() {
+describe("unshelfBook", function() {
     it("should be a function", function() {
       assert.isFunction(unshelfBook);
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     it("should remove a book by name", function() {
       var hyperion = {
@@ -143,6 +157,14 @@ describe("shelf.js", function() {
     });
 
 ////
+
+
+
+
+
+
+
+
 
     it("should remove a book on a different shelf by name", function() {
       var bossypants = {

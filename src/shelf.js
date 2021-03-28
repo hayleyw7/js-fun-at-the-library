@@ -1,28 +1,9 @@
-// function shelfBook(book, SciFiShelf) {
-//   if (book[3] === "sciFi") {
-//     sciFiShelf.push
-//     //// pop? shift? unshift?
-//   }
-// }
-
 function shelfBook(book, shelf) {
-  shelf.pop(book)
+  var shelfSize = 3;
+  if (shelf.length < shelfSize) {
+    shelf.unshift(book);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ////////
 
@@ -30,73 +11,13 @@ function shelfBook(book, shelf) {
 
 //////////
 
-///what i have so far (NOT WORKING)
-// function unshelfBook(book, shelf) {
-//   shelf.unshift(book)
-
-///// add a loop????
-/////  maybe if else inside of a loop???
-//// splice instead of unshift? slice???
-
-// }
-
-
-///// from slack (another person)
-
-// function unshelfBook(book, shelf) {
-//   for (var i = 0; i < shelf.length; i++) {
-//     if (book.title === shelf[i].title) {
-//       var removedBook = shelf.splice(i, 1);
-//     }
-//   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////doesn't work
-
 function unshelfBook(title, shelf) {
   for (var i = 0; i < shelf.length; i++) {
-    console.log(shelf[i].title);
-    // if (shelf.includes(title);
-    //   return shelf
-
-    /////add if else
-    //// and add parameters in that expression
+    if (title === shelf[i].title) {
+      shelf.splice(i, 1)
+    }
   }
 }
-
-////ideas from helper but not working anyway
-
-// for (var i = 0; i < shelf.length; i++) {
-//   if(book.title === shelf[i].title) {
-//     var removedBook = shelf.splice(i, 1);
-//   }
-// }
-
-
-/////idea from slack
-
-// function unshelfBook(book, shelf) {
-//   for (var i = 0; i < shelf.length; i++) {
-//     if (book.title === shelf[i].title) {
-//       var removedBook = shelf.splice(i, 1);
-//     }
-//   }
-
-
 
 ///////////
 
@@ -105,8 +26,24 @@ function unshelfBook(title, shelf) {
 /////////
 
 function listTitles(shelf) {
-  console.log(listTitles)
+  var titleList = ""
+	for (var i = 0; i < 1; i++) {
+    titleList = shelf[i].title
+  }
+  for (var i = 1; i < shelf.length; i++) {
+    titleList = titleList + ", " + shelf[i].title
+  }
+  return titleList
 }
+
+
+
+
+
+
+// npm test test/shelf-test.js
+
+
 
 function searchShelf() {
 }
@@ -115,7 +52,7 @@ function searchShelf() {
 
 
 
-// npm test test/shelf-test.js
+
 
 module.exports = {
   shelfBook,
