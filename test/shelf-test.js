@@ -110,20 +110,6 @@ describe("unshelfBook", function() {
       assert.isFunction(unshelfBook);
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     it("should remove a book by name", function() {
       var hyperion = {
         title: "Hyperion",
@@ -157,14 +143,6 @@ describe("unshelfBook", function() {
     });
 
 ////
-
-
-
-
-
-
-
-
 
     it("should remove a book on a different shelf by name", function() {
       var bossypants = {
@@ -231,6 +209,19 @@ describe("unshelfBook", function() {
 
 //////
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   describe("searchShelf", function() {
     it("should tell us if a title is on the shelf", function() {
       var hyperion = {
@@ -252,6 +243,7 @@ describe("unshelfBook", function() {
     });
 
 //
+
 
     it("should tell us if a title is on a different shelf", function() {
       var bossypants = {

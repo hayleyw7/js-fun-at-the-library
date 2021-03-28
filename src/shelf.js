@@ -41,12 +41,48 @@ function listTitles(shelf) {
 
 
 
-// npm test test/shelf-test.js
 
 
 
-function searchShelf() {
+
+
+
+
+
+
+
+
+function searchShelf(shelf, title) {
+  var isOnShelf = true
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === title) {
+      isOnShelf = true
+    }
+    else {
+      isOnSelf = false
+    }
+  }
+  return isOnShelf
 }
+
+////////////
+
+function searchShelf(shelf, book) {
+  var isOnShelf = false
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === book) {
+      isOnShelf = true
+    }
+  }
+  return isOnShelf
+}
+
+
+
+
+
+
+// npm test test/shelf-test.js
 
 
 
