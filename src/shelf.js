@@ -11,6 +11,9 @@ function shelfBook(book, shelf) {
 
 //////////
 
+
+
+
 function unshelfBook(title, shelf) {
   for (var i = 0; i < shelf.length; i++) {
     if (title === shelf[i].title) {
@@ -35,20 +38,6 @@ function listTitles(shelf) {
   }
   return titleList
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
