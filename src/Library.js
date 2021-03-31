@@ -1,30 +1,36 @@
-function createLibrary(library, shelves) {
-  // name = name;
-  // shelves = {
-  //   fantasy: fantasy,
-  //   fiction: fiction,
-  //   nonFiction: nonFiction,
-  // }
-  // console.log(name, shelves)
+function createLibrary(name, shelves) {
+  var library = {
+    name: name,
+    shelves: {}
+  }
+  return library
 }
 
 
-////////// addbook
 
 
-function addBook(book) {
 
-}
 
-function checkoutBook(book) {
 
-}
+
+
+
+
+
+
+
+
+
+
+// function checkoutBook(book) {
+//
+// }
 
 
 // npm test test/library-test.js
 
 module.exports = {
   createLibrary,
-  addBook,
-  checkoutBook
+  // addBook,
+  // checkoutBook
 };

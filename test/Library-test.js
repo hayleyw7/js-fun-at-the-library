@@ -6,11 +6,29 @@ var {
   checkoutBook
 } = require("../src/library.js")
 
+///
+
 describe("library.js", function() {
   describe("createLibrary", function() {
     it("should be a function", function() {
       assert.isFunction(createLibrary);
     });
+
+///
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     it("should have a name", function() {
       var denverLibrary = createLibrary("Denver Public Library");
@@ -18,11 +36,55 @@ describe("library.js", function() {
     assert.equal(denverLibrary.name, "Denver Public Library");
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ///
+
     it("should be able to have a different name", function() {
       var goldenLibrary = createLibrary("Golden Public Library");
 
       assert.equal(goldenLibrary.name, "Golden Public Library");
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     it("should have shelves", function() {
       var denverLibrary = createLibrary("Denver Public Library");
@@ -30,7 +92,15 @@ describe("library.js", function() {
       assert.isObject(denverLibrary.shelves);
     });
 
-    it("should have several different types of shelves", function() {
+
+
+
+
+
+
+
+
+    it.skip("should have several different types of shelves", function() {
       var denverLibrary = createLibrary("Denver Public Library");
 
       assert.deepEqual(denverLibrary.shelves.fantasy, []);
@@ -46,8 +116,18 @@ describe("library.js", function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
   describe("addBook", function() {
-    it("should add book to the fantasy shelf", function() {
+    it.skip("should add book to the fantasy shelf", function() {
       var denverLibrary = createLibrary("Denver Public Library");
       var dracula = {
         title: "Dracula",
@@ -63,7 +143,7 @@ describe("library.js", function() {
 
     //////
 
-    it("should add books to the correct shelves automatically", function() {
+    it.skip("should add books to the correct shelves automatically", function() {
       var denverLibrary = createLibrary("Denver Public Library");
       var dracula = {
         title: "Dracula",
@@ -89,7 +169,7 @@ describe("library.js", function() {
 ////////
 
   describe("checkoutBook", function() {
-    it("should unshelf a book to check out a book to a patron", function() {
+    it.skip("should unshelf a book to check out a book to a patron", function() {
       var dracula = {
         title: "Dracula",
         mainCharacter: { name: "Count Dracula", age: undefined, pronouns: "he/him" },
@@ -127,7 +207,7 @@ describe("library.js", function() {
 
 ////////
 
-    it("should only checkout a book if the book is on the shelves", function() {
+    it.skip("should only checkout a book if the book is on the shelves", function() {
       var denverLibrary = createLibrary("Denver Public Library");
 
       var error1 = checkoutBook(denverLibrary, "The Fifth Season", "fantasy");
